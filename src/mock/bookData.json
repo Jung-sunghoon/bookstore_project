@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "title": "데이터베이스 설계",
+    "author": "홍길동",
+    "category": "컴퓨터 과학",
+    "quantity": 10,
+    "salesCount": 5
+  },
+  {
+    "id": 2,
+    "title": "자바스크립트 마스터 가이드",
+    "author": "이순신",
+    "category": "프로그래밍",
+    "quantity": 8,
+    "salesCount": 12
+  },
+  {
+    "id": 3,
+    "title": "운영체제의 이해",
+    "author": "강감찬",
+    "category": "컴퓨터 과학",
+    "quantity": 15,
+    "salesCount": 8
+  },
+  {
+    "id": 4,
+    "title": "리액트를 활용한 웹 개발",
+    "author": "김유신",
+    "category": "프로그래밍",
+    "quantity": 20,
+    "salesCount": 15
+  },
+  {
+    "id": 5,
+    "title": "알고리즘 문제 해결 전략",
+    "author": "장보고",
+    "category": "컴퓨터 과학",
+    "quantity": 11,
+    "salesCount": 7
+  },
+  {
+    "id": 6,
+    "title": "미래 경제 트렌드",
+    "author": "박지원",
+    "category": "경제/경영",
+    "quantity": 7,
+    "salesCount": 20
+  },
+  {
+    "id": 7,
+    "title": "클린 코드",
+    "author": "로버트 C. 마틴",
+    "category": "프로그래밍",
+    "quantity": 30,
+    "salesCount": 25
+  },
+  {
+    "id": 8,
+    "title": "데이터 분석과 머신러닝",
+    "author": "최무선",
+    "category": "컴퓨터 과학",
+    "quantity": 10,
+    "salesCount": 18
+  },
+  {
+    "id": 9,
+    "title": "인공지능의 원리",
+    "author": "이성계",
+    "category": "컴퓨터 과학",
+    "quantity": 9,
+    "salesCount": 22
+  },
+  {
+    "id": 10,
+    "title": "Python 프로그래밍",
+    "author": "정약용",
+    "category": "프로그래밍",
+    "quantity": 20,
+    "salesCount": 30
+  },
+  {
+    "id": 11,
+    "title": "HTML & CSS 웹 디자인",
+    "author": "이황",
+    "category": "프로그래밍",
+    "quantity": 15,
+    "salesCount": 10
+  },
+  {
+    "id": 12,
+    "title": "스타트업 가이드",
+    "author": "신사임당",
+    "category": "경제/경영",
+    "quantity": 8,
+    "salesCount": 14
+  },
+  {
+    "id": 13,
+    "title": "블록체인과 암호화폐",
+    "author": "이이",
+    "category": "경제/경영",
+    "quantity": 10,
+    "salesCount": 19
+  },
+  {
+    "id": 14,
+    "title": "빅데이터 분석",
+    "author": "유관순",
+    "category": "컴퓨터 과학",
+    "quantity": 12,
+    "salesCount": 25
+  },
+  {
+    "id": 15,
+    "title": "React Native 모바일 앱 개발",
+    "author": "안중근",
+    "category": "프로그래밍",
+    "quantity": 5,
+    "salesCount": 18
+  },
+  {
+    "id": 16,
+    "title": "경영학 개론",
+    "author": "세종대왕",
+    "category": "경제/경영",
+    "quantity": 6,
+    "salesCount": 9
+  },
+  {
+    "id": 17,
+    "title": "UX/UI 디자인의 원칙",
+    "author": "윤봉길",
+    "category": "프로그래밍",
+    "quantity": 11,
+    "salesCount": 12
+  },
+  {
+    "id": 18,
+    "title": "투자의 정석",
+    "author": "이순신",
+    "category": "경제/경영",
+    "quantity": 14,
+    "salesCount": 30
+  },
+  {
+    "id": 19,
+    "title": "클라우드 컴퓨팅 개론",
+    "author": "이도",
+    "category": "컴퓨터 과학",
+    "quantity": 9,
+    "salesCount": 15
+  },
+  {
+    "id": 20,
+    "title": "스타트업 마케팅 전략",
+    "author": "강감찬",
+    "category": "경제/경영",
+    "quantity": 7,
+    "salesCount": 21
+  }
+]

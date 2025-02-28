@@ -1,0 +1,24 @@
+.bookContainer {
+  padding: 20px;
+}
+
+.bookItem {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 85px 50px;
+  width: 1080px;
+  height: 200px;
+}
+
+.bookItem:first-child {
+  border-top: 1px solid #ddd;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.author {
+  color: #555;
+}
