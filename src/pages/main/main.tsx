@@ -4,7 +4,7 @@ import TopButton from "../../components/button/topButton/TopButton";
 import Recommend from "../../components/recommend/Recommend";
 import Search from "../../components/search/Search";
 
-const main = () => {
+const Main = () => {
   return (
     <>
       <Search />
@@ -16,4 +16,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Main;
