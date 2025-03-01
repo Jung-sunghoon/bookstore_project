@@ -32,7 +32,7 @@ const BookDetail = () => {
       if (book && bookDetail) {
         setIsLoading(false); // 1초 후 로딩 상태를 false로 설정
       }
-    }, 20000);
+    }, 1000);
     window.scrollTo(0, 0); // 페이지가 로드될 때 맨 위로 스크롤
   }, []);
 
