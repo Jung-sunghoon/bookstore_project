@@ -8,7 +8,7 @@ git clone https://github.com/Jung-sunghoon/bookstore_project.git
 
 ### 의존성 설치
 
-yarn add
+yarn install
 
 ### 개발 서버 실행
 
