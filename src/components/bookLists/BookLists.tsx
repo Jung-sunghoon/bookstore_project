@@ -79,7 +79,8 @@ const BookLists = () => {
   // 페이지 로드 시 URL에 ?page=1이 없으면 추가
   useEffect(() => {
     if (location.search === "") {
-      navigate(`?page=1&search=&option=${searchOption}`); // 기본값으로 첫 페이지로 이동
+      // 브라우저가 처음 로드될 때 URL에 기본값을 설정
+      window.history.replaceState(null, "", `?page=1&search=&option=전체`);
     }
   }, []); // 컴포넌트가 처음 마운트될 때 한 번만 실행
 
