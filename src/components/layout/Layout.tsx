@@ -1,13 +1,15 @@
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
+import { ReactNode } from "react";
+import styles from "./Layout.module.css";
 
-const Layout = ({ children }: any) => {
+const Layout = ({ children }: { children: ReactNode }) => {
   return (
-    <>
+    <div className={styles.layoutContainer}>
       <Header />
-      <main>{children}</main>
+      <main className={styles.mainContent}>{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -1,24 +1,89 @@
+/* 책 항목 컨테이너 */
 .bookContainer {
-  padding: 20px;
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 100px 100px;
+  gap: 10px;
+  padding: 10px 0;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin: 10px;
+  border-radius: 20px;
 }
 
-.bookItem {
-  display: flex;
-  border-bottom: 1px solid #ddd;
-  padding: 85px 50px;
-  width: 1080px;
-  height: 200px;
+/* 책 이미지 */
+.bookImage {
+  padding: 0 20px;
 }
 
-.bookItem:first-child {
-  border-top: 1px solid #ddd;
+.bookImgDetail {
+  width: 50px;
+  height: 70px;
+  object-fit: cover;
 }
 
-.title {
-  font-size: 18px;
-  font-weight: bold;
+/* 책 이미지가 로드되지 않았을 때 대체 이미지 스타일 */
+.bookImagePlaceholder {
+  width: 50px;
+  height: 70px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
 }
 
-.author {
-  color: #555;
+/* 책 정보 텍스트 항목 */
+.bookContent {
+  padding: 0 10px;
+}
+
+/* 스켈레톤 로딩 UI 컨테이너 */
+.skeletonLoading {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr 1fr 100px 100px;
+  gap: 10px;
+  padding: 10px 0;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin: 10px;
+  border-radius: 20px;
+  opacity: 0.6;
+}
+
+/* 각 스켈레톤 텍스트 항목 */
+.skeletonItem {
+  height: 16px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  width: 40%;
+  margin: 8px 10px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  ); /* 그라디언트 배경 설정 */
+  background-size: 200% 100%; /* 배경 크기 설정 */
+  animation: skeleton-loading 1.5s infinite ease-in-out; /* 애니메이션 설정 */
+}
+
+/* 큰 스켈레톤 텍스트 항목 */
+.skeletonItemLarge {
+  width: 60%;
+  position: relative;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: skeleton-loading 1.5s infinite ease-in-out;
+}
+
+/* 스켈레톤 애니메이션: 배경색 변화 */
+@keyframes skeleton-loading {
+  0% {
+    background-position: -200px 0; /* 배경을 왼쪽으로 시작 */
+  }
+  100% {
+    background-position: 200px 0; /* 배경을 오른쪽으로 이동 */
+  }
 }

@@ -1,0 +1,53 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+  transition: box-shadow 0.3s ease;
+}
+
+.scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 1400px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.logoText {
+  margin-left: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navItem a {
+  text-decoration: none;
+  color: #333;
+}

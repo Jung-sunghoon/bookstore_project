@@ -1,0 +1,15 @@
+/* 레이아웃 컨테이너 */
+.layoutContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 메인 스타일링 */
+.mainContent {
+  padding-top: 120px;
+  width: 100%;
+  max-width: 100%;
+}

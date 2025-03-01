@@ -1,5 +1,13 @@
+import styles from "./Footer.module.css";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className={styles.footer}>
+      <div>
+        <p>© {new Date().getFullYear()} BOOKS. Made by JShoon</p>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

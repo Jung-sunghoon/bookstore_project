@@ -1,75 +1,89 @@
-/* 전체 검색 섹션 스타일 */
 .searchSection {
-  display: flex; /* flexbox 레이아웃 사용 */
+  display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
 }
 
-/* 드롭다운 버튼 스타일 */
-.dropDownBtn {
-  display: flex; /* Flexbox 사용 */
+.dropdownWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownButton {
+  display: flex;
   align-items: center;
-  justify-content: start; /* 수평 중앙 정렬 */
-  font-size: 20px; /* 글자 크기 */
-  color: #777777;
-  width: 120px; /* 버튼 너비 */
-  background-color: white; /* 배경색 */
-  border: 1px solid black;
-  cursor: pointer; /* 마우스 커서가 포인터로 변경 */
-  height: 60px; /* 버튼 높이 */
-  background-image: url("../../assets/imgs/pageIcon/downIcon.svg"); /* 배경 이미지 */
-  background-repeat: no-repeat; /* 이미지 반복 안 함 */
-  background-position: center right 5px; /* 이미지 중앙, 오른쪽 배치 */
+  justify-content: flex-start;
+  font-size: 16px;
+  color: #333;
+  width: 120px;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  height: 52px;
+  padding: 0 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.2s ease;
 }
 
-.open {
-  background-image: url("../../assets/imgs/pageIcon/upIcon.svg"); /* 배경 이미지 */
+.dropdownButtonIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* 드롭다운 메뉴 항목 스타일 */
-.dropDownMenu li {
-  cursor: pointer; /* 마우스 커서가 포인터로 변경 */
-  font-size: 18px; /* 글자 크기 */
-  padding: 10px; /* 항목 안쪽 여백 */
-  z-index: 2;
+.dropdownList {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 118px;
+  background-color: white;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #eaeaea;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
 
-/* 드롭다운 메뉴 항목 호버 스타일 */
-.dropDownMenu li:hover {
-  background-color: black; /* 마우스 오버 시 배경색 변경 */
-  color: #ffffff;
+.dropdownItem {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: background-color 0.2s ease;
+  color: #333;
 }
 
-/* 드롭다운 컨테이너 스타일 */
-.dropDownContainer {
-  position: relative; /* 자식 요소의 절대 위치 기준 */
-  display: inline-block; /* 블록 요소로 변환하여 인라인 요소와 정렬 */
+.dropdownItem:hover {
+  background-color: #f5f5f5;
 }
 
-/* 드롭다운 메뉴 스타일 */
-.dropDownMenu {
-  position: absolute; /* 부모 요소를 기준으로 절대 위치 */
-  left: 0; /* 왼쪽 정렬 */
-  width: 100%; /* 부모 요소의 너비와 동일 */
-  background-color: white; /* 배경색 */
-  list-style: none; /* 리스트 스타일 제거 */
-  border: 1px solid black;
-  z-index: 1; /* 다른 요소 위에 표시 */
-  color: #777777;
-  box-sizing: border-box;
+.inputWrapper {
+  position: relative;
+  width: 500px;
 }
 
 .searchInput {
-  font-size: 20px;
-  height: 54px;
-  width: 626px;
+  font-size: 16px;
+  height: 50px;
+  width: 100%;
+  padding: 0 15px 0 40px;
+  border: 1px solid #eaeaea;
+  border-left: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.searchBtn {
-  font-size: 20px;
-  width: 100px;
-  height: 60px;
-  background-color: #fff;
-  border: 1px solid black;
-  cursor: pointer;
+.searchIcon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
 }

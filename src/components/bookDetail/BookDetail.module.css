@@ -1,0 +1,168 @@
+/* 전체 컨테이너 */
+.container {
+  padding: 20px;
+}
+
+/* 책 정보 부분 */
+.bookInfo {
+  display: flex;
+  gap: 100px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* 책 이미지 */
+.bookImage {
+  width: 450px;
+  height: 600px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* 책 텍스트 정보 */
+.textInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* 로딩 중 텍스트 */
+.skeletonText {
+  width: 100%;
+  height: 24px;
+  background-color: #e0e0e0;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+/* 책 제목 */
+.title {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* 저자, 재고 수량, 판매 수 */
+.author,
+.quantity,
+.salesCount {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+/* 책 상세 정보 */
+.bookDetail {
+  text-align: left;
+  margin-top: 100px;
+}
+
+/* 책 설명 */
+.bookDetailDescription {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* 책 상세 정보 제목 (h2) */
+.bookDetail h2 {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+/* 책 상세 정보 제목 (h3) */
+.bookDetail h3 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+/* 제목 스타일 */
+.bookDetail h2,
+.bookDetail h3 {
+  font-weight: 600;
+}
+
+/* 구분선 */
+hr {
+  margin: 30px 0;
+  background-color: #ddd;
+}
+
+/* 책 목차 */
+.bookDetail ul {
+  list-style-type: decimal;
+}
+
+/* 책 목차 항목 */
+.bookDetail ul li {
+  margin-top: 10px;
+}
+
+.skeletonContainer {
+  display: flex;
+}
+
+.skeletonTextWrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 400px;
+}
+
+/* 로딩 중 이미지 */
+.skeletonImage {
+  width: 450px;
+  height: 600px;
+  background-color: #e0e0e0;
+  margin-right: 20px;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  ); /* 그라디언트 배경 */
+  background-size: 200% 100%; /* 배경 크기를 200%로 설정 */
+  animation: skeleton-loading 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+}
+
+/* 스켈레톤 UI 텍스트 */
+.skeletonText {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  ); /* 그라디언트 배경 */
+  background-size: 200% 100%; /* 배경 크기를 200%로 설정 */
+  animation: skeleton-loading 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+}
+
+/* 큰 스켈레톤 텍스트 항목 */
+.skeletonItemLarge {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: clamp(25vw, 50vw, 75vw);
+  margin: 10px 0;
+  border-radius: 4px;
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  ); /* 그라디언트 배경 */
+  background-size: 200% 100%; /* 배경 크기를 200%로 설정 */
+  animation: skeleton-loading 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+}
+
+/* 스켈레톤 UI 애니메이션: 배경색 변화 */
+@keyframes skeleton-loading {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}

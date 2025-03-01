@@ -1,0 +1,22 @@
+/* plus 버튼  */
+.plusBtn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 50%;
+  right: 80px;
+  bottom: 200px; /* 기본 bottom 값 */
+  cursor: pointer;
+  position: fixed;
+  font-size: 30px;
+  transition: bottom 0.3s ease; /* bottom 변경 시 부드럽게 애니메이션 */
+}
+
+/* 스크롤 시 위치 이동 */
+.plusBtn.scrolled {
+  bottom: 280px; /* 스크롤이 300px 이상일 때 */
+}
