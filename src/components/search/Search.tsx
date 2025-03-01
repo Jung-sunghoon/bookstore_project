@@ -58,7 +58,7 @@ const Search = () => {
       navigate(`?page=1&search=${searchQuery}&option=${selectedOption}`);
     } else {
       alert(`전체 검색을 시작합니다.`);
-      navigate("/?page=1");
+      navigate(`/?page=1&search=${searchQuery}&option=${selectedOption}`);
     }
   };
 
